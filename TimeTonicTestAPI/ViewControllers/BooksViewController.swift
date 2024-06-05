@@ -45,5 +45,18 @@ extension BooksViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    // Agregar espacio entre las celdas
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 80
+        }
+        
+        func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+            return UIView()
+        }
+        
+        func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+            return 10
+        }
 }
 

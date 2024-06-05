@@ -12,6 +12,8 @@ class BookCell: UITableViewCell {
     private let bookImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 25 // Redondear esquinas
+        imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -19,6 +21,7 @@ class BookCell: UITableViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 2 // Permitir múltiples líneas si el título es largo
         return label
     }()
     
