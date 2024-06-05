@@ -29,6 +29,7 @@
 		526774EC2C10B96600541705 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774EB2C10B96600541705 /* UITextField+Padding.swift */; };
 		526774EE2C10C44F00541705 /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774ED2C10C44F00541705 /* BooksView.swift */; };
 		526774F02C10C49B00541705 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774EF2C10C49B00541705 /* BookCell.swift */; };
+		526774F32C10C9AD00541705 /* BooksViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774F22C10C9AD00541705 /* BooksViewController+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		526774EB2C10B96600541705 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
 		526774ED2C10C44F00541705 /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		526774EF2C10C49B00541705 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		526774F22C10C9AD00541705 /* BooksViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BooksViewController+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				526774DB2C0FC4CB00541705 /* UIViewController+Alerts.swift */,
 				526774EB2C10B96600541705 /* UITextField+Padding.swift */,
+				526774F22C10C9AD00541705 /* BooksViewController+TableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				526774D52C0FB33600541705 /* Book.swift in Sources */,
 				526774DC2C0FC4CB00541705 /* UIViewController+Alerts.swift in Sources */,
 				526774D12C0FB31700541705 /* CreateSesskeyResponse.swift in Sources */,
+				526774F32C10C9AD00541705 /* BooksViewController+TableView.swift in Sources */,
 				526774E42C10179F00541705 /* BooksViewController.swift in Sources */,
 				526774D92C0FC37700541705 /* APIManager.swift in Sources */,
 				525878072C0E5B530056910A /* ViewController.swift in Sources */,
