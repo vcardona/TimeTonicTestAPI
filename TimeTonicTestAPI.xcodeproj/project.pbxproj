@@ -24,6 +24,8 @@
 		526774DE2C1008CD00541705 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526774DD2C1008CD00541705 /* Config.plist */; };
 		526774E22C10118B00541705 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E12C10118B00541705 /* Config.swift */; };
 		526774E42C10179F00541705 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E32C10179F00541705 /* BooksViewController.swift */; };
+		526774E72C10B24600541705 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E62C10B24600541705 /* LoginView.swift */; };
+		526774EA2C10B3C900541705 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E92C10B3C900541705 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		526774DD2C1008CD00541705 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		526774E12C10118B00541705 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		526774E32C10179F00541705 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		526774E62C10B24600541705 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		526774E92C10B3C900541705 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		525878012C0E5B530056910A /* TimeTonicTestAPI */ = {
 			isa = PBXGroup;
 			children = (
+				526774E82C10B3AF00541705 /* ViewModels */,
+				526774E52C10B23A00541705 /* Views */,
 				526774E02C10117600541705 /* Config */,
 				526774DA2C0FC4B800541705 /* Extensions */,
 				526774CA2C0FB26500541705 /* ViewControllers */,
@@ -138,6 +144,22 @@
 				526774E12C10118B00541705 /* Config.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		526774E52C10B23A00541705 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				526774E62C10B24600541705 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		526774E82C10B3AF00541705 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				526774E92C10B3C900541705 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +242,8 @@
 				525878072C0E5B530056910A /* ViewController.swift in Sources */,
 				526774E22C10118B00541705 /* Config.swift in Sources */,
 				526774D32C0FB32800541705 /* GetAllBooksResponse.swift in Sources */,
+				526774EA2C10B3C900541705 /* LoginViewModel.swift in Sources */,
+				526774E72C10B24600541705 /* LoginView.swift in Sources */,
 				525878032C0E5B530056910A /* AppDelegate.swift in Sources */,
 				526774D72C0FB3A000541705 /* ApiService.swift in Sources */,
 				526774CC2C0FB28100541705 /* CreateAppkeyResponse.swift in Sources */,
