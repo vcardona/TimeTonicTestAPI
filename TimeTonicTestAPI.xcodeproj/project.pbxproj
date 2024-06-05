@@ -13,6 +13,14 @@
 		5258780A2C0E5B530056910A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 525878092C0E5B530056910A /* Base */; };
 		5258780C2C0E5B550056910A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5258780B2C0E5B550056910A /* Assets.xcassets */; };
 		5258780F2C0E5B550056910A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5258780E2C0E5B550056910A /* Base */; };
+		526774CC2C0FB28100541705 /* CreateAppkeyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774CB2C0FB28100541705 /* CreateAppkeyResponse.swift */; };
+		526774CE2C0FB2ED00541705 /* CreateOauthkeyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774CD2C0FB2ED00541705 /* CreateOauthkeyResponse.swift */; };
+		526774D12C0FB31700541705 /* CreateSesskeyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774D02C0FB31700541705 /* CreateSesskeyResponse.swift */; };
+		526774D32C0FB32800541705 /* GetAllBooksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774D22C0FB32800541705 /* GetAllBooksResponse.swift */; };
+		526774D52C0FB33600541705 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774D42C0FB33600541705 /* Book.swift */; };
+		526774D72C0FB3A000541705 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774D62C0FB3A000541705 /* ApiService.swift */; };
+		526774D92C0FC37700541705 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774D82C0FC37700541705 /* APIManager.swift */; };
+		526774DC2C0FC4CB00541705 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774DB2C0FC4CB00541705 /* UIViewController+Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		5258780B2C0E5B550056910A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5258780E2C0E5B550056910A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		525878102C0E5B550056910A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526774CB2C0FB28100541705 /* CreateAppkeyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAppkeyResponse.swift; sourceTree = "<group>"; };
+		526774CD2C0FB2ED00541705 /* CreateOauthkeyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOauthkeyResponse.swift; sourceTree = "<group>"; };
+		526774D02C0FB31700541705 /* CreateSesskeyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSesskeyResponse.swift; sourceTree = "<group>"; };
+		526774D22C0FB32800541705 /* GetAllBooksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllBooksResponse.swift; sourceTree = "<group>"; };
+		526774D42C0FB33600541705 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		526774D62C0FB3A000541705 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		526774D82C0FC37700541705 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		526774DB2C0FC4CB00541705 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,10 @@
 		525878012C0E5B530056910A /* TimeTonicTestAPI */ = {
 			isa = PBXGroup;
 			children = (
+				526774DA2C0FC4B800541705 /* Extensions */,
+				526774CA2C0FB26500541705 /* ViewControllers */,
+				526774C92C0FB25C00541705 /* Services */,
+				526774C82C0FB25300541705 /* Models */,
 				525878022C0E5B530056910A /* AppDelegate.swift */,
 				525878042C0E5B530056910A /* SceneDelegate.swift */,
 				525878062C0E5B530056910A /* ViewController.swift */,
@@ -65,6 +85,42 @@
 				525878102C0E5B550056910A /* Info.plist */,
 			);
 			path = TimeTonicTestAPI;
+			sourceTree = "<group>";
+		};
+		526774C82C0FB25300541705 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				526774CB2C0FB28100541705 /* CreateAppkeyResponse.swift */,
+				526774CD2C0FB2ED00541705 /* CreateOauthkeyResponse.swift */,
+				526774D02C0FB31700541705 /* CreateSesskeyResponse.swift */,
+				526774D22C0FB32800541705 /* GetAllBooksResponse.swift */,
+				526774D42C0FB33600541705 /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		526774C92C0FB25C00541705 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				526774D62C0FB3A000541705 /* ApiService.swift */,
+				526774D82C0FC37700541705 /* APIManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		526774CA2C0FB26500541705 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		526774DA2C0FC4B800541705 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				526774DB2C0FC4CB00541705 /* UIViewController+Alerts.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526774D52C0FB33600541705 /* Book.swift in Sources */,
+				526774DC2C0FC4CB00541705 /* UIViewController+Alerts.swift in Sources */,
+				526774D12C0FB31700541705 /* CreateSesskeyResponse.swift in Sources */,
+				526774D92C0FC37700541705 /* APIManager.swift in Sources */,
 				525878072C0E5B530056910A /* ViewController.swift in Sources */,
+				526774D32C0FB32800541705 /* GetAllBooksResponse.swift in Sources */,
 				525878032C0E5B530056910A /* AppDelegate.swift in Sources */,
+				526774D72C0FB3A000541705 /* ApiService.swift in Sources */,
+				526774CC2C0FB28100541705 /* CreateAppkeyResponse.swift in Sources */,
+				526774CE2C0FB2ED00541705 /* CreateOauthkeyResponse.swift in Sources */,
 				525878052C0E5B530056910A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
