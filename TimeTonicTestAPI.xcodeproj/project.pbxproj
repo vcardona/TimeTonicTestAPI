@@ -26,6 +26,7 @@
 		526774E42C10179F00541705 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E32C10179F00541705 /* BooksViewController.swift */; };
 		526774E72C10B24600541705 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E62C10B24600541705 /* LoginView.swift */; };
 		526774EA2C10B3C900541705 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E92C10B3C900541705 /* LoginViewModel.swift */; };
+		526774EC2C10B96600541705 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774EB2C10B96600541705 /* UITextField+Padding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		526774E32C10179F00541705 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		526774E62C10B24600541705 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		526774E92C10B3C900541705 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		526774EB2C10B96600541705 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				526774DB2C0FC4CB00541705 /* UIViewController+Alerts.swift */,
+				526774EB2C10B96600541705 /* UITextField+Padding.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				525878032C0E5B530056910A /* AppDelegate.swift in Sources */,
 				526774D72C0FB3A000541705 /* ApiService.swift in Sources */,
 				526774CC2C0FB28100541705 /* CreateAppkeyResponse.swift in Sources */,
+				526774EC2C10B96600541705 /* UITextField+Padding.swift in Sources */,
 				526774CE2C0FB2ED00541705 /* CreateOauthkeyResponse.swift in Sources */,
 				525878052C0E5B530056910A /* SceneDelegate.swift in Sources */,
 			);
