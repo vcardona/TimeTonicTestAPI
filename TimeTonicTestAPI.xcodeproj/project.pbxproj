@@ -27,6 +27,8 @@
 		526774E72C10B24600541705 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E62C10B24600541705 /* LoginView.swift */; };
 		526774EA2C10B3C900541705 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E92C10B3C900541705 /* LoginViewModel.swift */; };
 		526774EC2C10B96600541705 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774EB2C10B96600541705 /* UITextField+Padding.swift */; };
+		526774EE2C10C44F00541705 /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774ED2C10C44F00541705 /* BooksView.swift */; };
+		526774F02C10C49B00541705 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774EF2C10C49B00541705 /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		526774E62C10B24600541705 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		526774E92C10B3C900541705 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		526774EB2C10B96600541705 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
+		526774ED2C10C44F00541705 /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
+		526774EF2C10C49B00541705 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				526774E62C10B24600541705 /* LoginView.swift */,
+				526774ED2C10C44F00541705 /* BooksView.swift */,
+				526774EF2C10C49B00541705 /* BookCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526774F02C10C49B00541705 /* BookCell.swift in Sources */,
 				526774D52C0FB33600541705 /* Book.swift in Sources */,
 				526774DC2C0FC4CB00541705 /* UIViewController+Alerts.swift in Sources */,
 				526774D12C0FB31700541705 /* CreateSesskeyResponse.swift in Sources */,
@@ -253,6 +260,7 @@
 				526774EC2C10B96600541705 /* UITextField+Padding.swift in Sources */,
 				526774CE2C0FB2ED00541705 /* CreateOauthkeyResponse.swift in Sources */,
 				525878052C0E5B530056910A /* SceneDelegate.swift in Sources */,
+				526774EE2C10C44F00541705 /* BooksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
