@@ -22,6 +22,7 @@
 		526774D92C0FC37700541705 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774D82C0FC37700541705 /* APIManager.swift */; };
 		526774DC2C0FC4CB00541705 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774DB2C0FC4CB00541705 /* UIViewController+Alerts.swift */; };
 		526774DE2C1008CD00541705 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526774DD2C1008CD00541705 /* Config.plist */; };
+		526774E22C10118B00541705 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E12C10118B00541705 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		526774D82C0FC37700541705 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		526774DB2C0FC4CB00541705 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		526774DD2C1008CD00541705 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		526774E12C10118B00541705 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 		525877F62C0E5B530056910A = {
 			isa = PBXGroup;
 			children = (
-				526774DD2C1008CD00541705 /* Config.plist */,
 				525878012C0E5B530056910A /* TimeTonicTestAPI */,
 				525878002C0E5B530056910A /* Products */,
 			);
@@ -75,6 +76,7 @@
 		525878012C0E5B530056910A /* TimeTonicTestAPI */ = {
 			isa = PBXGroup;
 			children = (
+				526774E02C10117600541705 /* Config */,
 				526774DA2C0FC4B800541705 /* Extensions */,
 				526774CA2C0FB26500541705 /* ViewControllers */,
 				526774C92C0FB25C00541705 /* Services */,
@@ -124,6 +126,15 @@
 				526774DB2C0FC4CB00541705 /* UIViewController+Alerts.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		526774E02C10117600541705 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				526774DD2C1008CD00541705 /* Config.plist */,
+				526774E12C10118B00541705 /* Config.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 				526774D12C0FB31700541705 /* CreateSesskeyResponse.swift in Sources */,
 				526774D92C0FC37700541705 /* APIManager.swift in Sources */,
 				525878072C0E5B530056910A /* ViewController.swift in Sources */,
+				526774E22C10118B00541705 /* Config.swift in Sources */,
 				526774D32C0FB32800541705 /* GetAllBooksResponse.swift in Sources */,
 				525878032C0E5B530056910A /* AppDelegate.swift in Sources */,
 				526774D72C0FB3A000541705 /* ApiService.swift in Sources */,

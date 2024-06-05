@@ -10,9 +10,14 @@ import Foundation
 class ApiService {
     
     static let shared = ApiService()
-    private let baseUrl = "https://timetonic.com/live/api.php"
+    private let baseUrl: String
     
-    private init() { }
+    private init() { 
+        guard let url = Config.shared.value(forKey: "API_BASE_URL") else {
+                    fatalError("API_BASE_URL not set in Config.plist")
+                }
+                self.baseUrl = url
+    }
     
     func createAppkey(completion: @escaping (Result<CreateAppkeyResponse, Error>) -> Void) {
         let parameters: [String: String] = [
