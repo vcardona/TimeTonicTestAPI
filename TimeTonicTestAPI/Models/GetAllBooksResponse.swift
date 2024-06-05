@@ -7,8 +7,13 @@
 
 import Foundation
 
-// Definir la estructura de respuesta para getAllBooks
 struct GetAllBooksResponse: Decodable {
     let status: String
-    let books: [Book]
+    let allBooks: AllBooks
+    
+    struct AllBooks: Decodable {
+        let books: [Book]
+    }
 }
+
+

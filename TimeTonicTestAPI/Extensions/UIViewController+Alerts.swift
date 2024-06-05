@@ -66,7 +66,7 @@ extension CreateSesskeyResponse: CustomStringConvertible {
 
 extension GetAllBooksResponse: CustomStringConvertible {
     var description: String {
-        let booksList = books.map { "\($0.title) by \($0.author)" }.joined(separator: "\n")
+        let booksList = allBooks.books.map { "\($0.ownerPrefs?.title ?? "Unknown Title")" }.joined(separator: "\n")
         return """
         Status: \(status)
         Books:

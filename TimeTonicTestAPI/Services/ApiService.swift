@@ -36,6 +36,8 @@ class ApiService {
             "appkey": appkey
         ]
         
+        print("Creating OAuth key with parameters: \(parameters)")
+        
         sendRequest(parameters: parameters, completion: completion)
     }
     

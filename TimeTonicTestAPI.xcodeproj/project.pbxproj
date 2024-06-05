@@ -23,6 +23,7 @@
 		526774DC2C0FC4CB00541705 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774DB2C0FC4CB00541705 /* UIViewController+Alerts.swift */; };
 		526774DE2C1008CD00541705 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526774DD2C1008CD00541705 /* Config.plist */; };
 		526774E22C10118B00541705 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E12C10118B00541705 /* Config.swift */; };
+		526774E42C10179F00541705 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526774E32C10179F00541705 /* BooksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		526774DB2C0FC4CB00541705 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		526774DD2C1008CD00541705 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		526774E12C10118B00541705 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		526774E32C10179F00541705 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,6 @@
 				526774C82C0FB25300541705 /* Models */,
 				525878022C0E5B530056910A /* AppDelegate.swift */,
 				525878042C0E5B530056910A /* SceneDelegate.swift */,
-				525878062C0E5B530056910A /* ViewController.swift */,
 				525878082C0E5B530056910A /* Main.storyboard */,
 				5258780B2C0E5B550056910A /* Assets.xcassets */,
 				5258780D2C0E5B550056910A /* LaunchScreen.storyboard */,
@@ -116,6 +117,8 @@
 		526774CA2C0FB26500541705 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				525878062C0E5B530056910A /* ViewController.swift */,
+				526774E32C10179F00541705 /* BooksViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				526774D52C0FB33600541705 /* Book.swift in Sources */,
 				526774DC2C0FC4CB00541705 /* UIViewController+Alerts.swift in Sources */,
 				526774D12C0FB31700541705 /* CreateSesskeyResponse.swift in Sources */,
+				526774E42C10179F00541705 /* BooksViewController.swift in Sources */,
 				526774D92C0FC37700541705 /* APIManager.swift in Sources */,
 				525878072C0E5B530056910A /* ViewController.swift in Sources */,
 				526774E22C10118B00541705 /* Config.swift in Sources */,

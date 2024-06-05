@@ -76,19 +76,24 @@ class ViewController: UIViewController {
             }
             
             // Llamar a la función para inicializar las solicitudes API con el username y password
-            APIManager.shared.initialize(username: username, password: password) { result in
-                switch result {
-                case .success(let booksResponse):
-                    DispatchQueue.main.async {
-                        self.showAlert(with: booksResponse)
+                    APIManager.shared.initialize(username: username, password: password) { result in
+                        DispatchQueue.main.async {
+                            switch result {
+                            case .success(let booksResponse):
+                                self.showBooksView(with: booksResponse.allBooks.books)
+                            case .failure(let error):
+                                self.showAlert(with: error)
+                            }
+                        }
                     }
-                    print("Books: \(booksResponse.books)")
-                case .failure(let error):
-                    DispatchQueue.main.async {
-                        self.showAlert(with: error)
-                    }
-                    print("Error: \(error.localizedDescription)")
                 }
-            }
-        }
+                
+    // Mostrar la vista de libros
+       private func showBooksView(with books: [Book]) {
+           let booksViewController = BooksViewController()
+           booksViewController.books = books
+           booksViewController.modalPresentationStyle = .fullScreen
+           present(booksViewController, animated: true, completion: nil)
+       }
+               
 }
