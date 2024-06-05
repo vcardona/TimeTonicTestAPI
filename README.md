@@ -23,7 +23,7 @@ This project is a demonstration of integrating with the TimeTonic API to perform
 
 ### Prerequisites
 
-- Xcode 12.0 or later
+- Xcode 15.4 or later
 - Swift 5.0 or later
 
 ### Installation
