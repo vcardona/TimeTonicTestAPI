@@ -14,6 +14,11 @@ class LoginView: UIView {
         textField.placeholder = "Username"
         textField.borderStyle = .roundedRect
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.layer.cornerRadius = 8
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = UIColor.lightGray.cgColor
+        textField.setLeftPaddingPoints(10)
+        textField.setRightPaddingPoints(10)
         return textField
     }()
     
@@ -23,6 +28,11 @@ class LoginView: UIView {
         textField.borderStyle = .roundedRect
         textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.layer.cornerRadius = 8
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = UIColor.lightGray.cgColor
+        textField.setLeftPaddingPoints(10)
+        textField.setRightPaddingPoints(10)
         return textField
     }()
     
@@ -30,6 +40,12 @@ class LoginView: UIView {
         let button = UIButton(type: .system)
         button.setTitle("Login", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = UIColor.systemBlue
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 20
+        button.clipsToBounds = true
+        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         return button
     }()
     
@@ -74,3 +90,16 @@ class LoginView: UIView {
     }
 }
 
+extension UITextField {
+    func setLeftPaddingPoints(_ amount:CGFloat){
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.height))
+        self.leftView = paddingView
+        self.leftViewMode = .always
+    }
+    
+    func setRightPaddingPoints(_ amount:CGFloat) {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.height))
+        self.rightView = paddingView
+        self.rightViewMode = .always
+    }
+}
