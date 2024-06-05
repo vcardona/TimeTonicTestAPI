@@ -10,8 +10,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-                setupLoginView()
-                loginView.loginButton.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        setupLoginView()
+        loginView.loginButton.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
     }
     
     private func setupLoginView() {
@@ -35,8 +35,13 @@ class ViewController: UIViewController {
             return
         }
         
+        DispatchQueue.main.async {
+                    self.loginView.activityIndicator.startAnimating()
+                }
+        
         loginViewModel.login(username: username, password: password) { [weak self] result in
             DispatchQueue.main.async {
+                self?.loginView.activityIndicator.stopAnimating()
                 switch result {
                 case .success(let books):
                     self?.showBooksView(with: books)

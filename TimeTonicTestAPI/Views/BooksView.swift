@@ -16,6 +16,13 @@ class BooksView: UIView {
         return tableView
     }()
     
+    let activityIndicator: UIActivityIndicatorView = {
+            let activityIndicator = UIActivityIndicatorView(style: .large)
+            activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+            activityIndicator.hidesWhenStopped = true
+            return activityIndicator
+        }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -28,6 +35,7 @@ class BooksView: UIView {
     
     private func setupViews() {
         addSubview(tableView)
+        addSubview(activityIndicator)
     }
     
     private func setupConstraints() {
@@ -35,7 +43,10 @@ class BooksView: UIView {
             tableView.topAnchor.constraint(equalTo: topAnchor),
             tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: trailingAnchor)
+            tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            
+            activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 }

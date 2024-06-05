@@ -49,6 +49,13 @@ class LoginView: UIView {
         return button
     }()
     
+    let activityIndicator: UIActivityIndicatorView = {
+            let activityIndicator = UIActivityIndicatorView(style: .large)
+            activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+            activityIndicator.hidesWhenStopped = true
+            return activityIndicator
+        }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -63,6 +70,7 @@ class LoginView: UIView {
         addSubview(usernameTextField)
         addSubview(passwordTextField)
         addSubview(loginButton)
+        addSubview(activityIndicator)
     }
     
     private func setupConstraints() {
@@ -85,7 +93,11 @@ class LoginView: UIView {
             loginButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
             loginButton.widthAnchor.constraint(equalToConstant: 100),
-            loginButton.heightAnchor.constraint(equalToConstant: 40)
+            loginButton.heightAnchor.constraint(equalToConstant: 40),
+            
+            // Activity Indicator Constraints
+            activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 }

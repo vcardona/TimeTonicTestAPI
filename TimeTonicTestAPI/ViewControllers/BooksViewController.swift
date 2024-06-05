@@ -21,11 +21,25 @@ class BooksViewController: UIViewController {
         super.viewDidLoad()
         booksView.tableView.delegate = self
         booksView.tableView.dataSource = self
-        filterBooks()
+        loadBooks()
     }
+    
+    private func loadBooks() {
+            booksView.activityIndicator.startAnimating()
+            
+            // Simular carga de libros (en tu caso, reemplaza esto con la llamada real a la API)
+            DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+                self.filterBooks()
+                DispatchQueue.main.async {
+                    self.booksView.activityIndicator.stopAnimating()
+                }
+            }
+        }
     
     private func filterBooks() {
         books = books.filter { $0.b_c != "contact" }
-        booksView.tableView.reloadData()
+        DispatchQueue.main.async {
+            self.booksView.tableView.reloadData()
+        }
     }
 }
